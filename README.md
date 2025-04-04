@@ -11,7 +11,7 @@
     has a clean configuration. it also helps manage dependencies and scripts for
     your project. 
 
-    ``` bash 
+    ```bash 
             npm init 
     ```
 
