@@ -23,7 +23,7 @@ function App() {
         and also for inline styling =>
           
             background-color: rgb(255, 0, 0); css
-            style={{background: rgb(255, 0, 0)}} inline-style in react 
+            style={{backgroundColor: rgb(255, 0, 0)}} inline-style in react 
       */}
       <h1>{counter}</h1>
       <button onClick={() => setCounter(prevState => prevState + 1)}>INCREMENT</button>
