@@ -1,30 +1,14 @@
+## Branches
 
-# Package JSON
+This project contains multiple branches for different parts of the learning process.
 
-    the package.json file is metadata file that contains important information about the project,
-    such as its name, version, dependencies, scripts...
+### How to Access the Branches:
 
-## Why We Use Npm init ? 
+To explore the code in these branches, please follow these steps:
 
-    When starting a new project, you run `npm init` 
-    for a default setup. by using it You're ensuring that your project
-    has a clean configuration. it also helps manage dependencies and scripts for
-    your project. 
+1. Go to the [full-group-react](https://github.com/youssefsaki/full-group-react).
+2. Navigate to the **Branches** section at the top of the repository page.
+3. Select the branch you'd like to explore (EX, `main` or `useState`).
+4. Review the code in that branch to understand how different features are implemented.
 
-    ``` bash 
-            npm init 
-    ```
-
-## Why It's Important : 
-
-    ### - Keeps Track of Dependencies.
-    ### - Organizes Scripts.
-    ### - Helpts with versioning
-
-# React Hooks!
-
-#### Welcome To React Hooks.
-
-## Use State : 
-![use State Image](./courseScreenshots/useState.png)
-
+Feel free to explore the branches to better understand how the project evolves and the different concepts covered.
