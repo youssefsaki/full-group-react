@@ -1,10 +1,12 @@
-// App is the root component
 import Timer from "./components/Timer"
+import UseEffectComp from "./components/UseEffectComp"
+
 
 const App = () => {
   return (
     <div>
-      <Timer /> {/* Renders the Timer component */}
+      <UseEffectComp />
+      <Timer />
     </div>
   )
 }
