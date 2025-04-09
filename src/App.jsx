@@ -1,12 +1,10 @@
-import Timer from "./components/Timer"
-import UseEffectComp from "./components/UseEffectComp"
+import UseEffectFetch from "./components/UseEffectFetch"
 
 
 const App = () => {
   return (
     <div>
-      <UseEffectComp />
-      <Timer />
+      <UseEffectFetch />
     </div>
   )
 }
