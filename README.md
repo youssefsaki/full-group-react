@@ -1,14 +1,40 @@
-## Branches
+# 📦 React Props Example with Dynamic Button Rendering
 
-This project contains multiple branches for different parts of the learning process.
+This project demonstrates how **props** and dynamic rendering work in React by passing state and functions through multiple components (A → B → C) and rendering buttons using a mapped array.
 
-### How to Access the Branches:
+---
 
-To explore the code in these branches, please follow these steps:
+## 📁 File Structure
 
-1. Go to the [full-group-react](https://github.com/youssefsaki/full-group-react).
-2. Navigate to the **Branches** section at the top of the repository page.
-3. Select the branch you'd like to explore (EX, `main` or `useState`).
-4. Review the code in that branch to understand how different features are implemented.
+src/ │ ├── A.jsx ├── components/ │ ├── B.jsx │ └── C.jsx
 
-Feel free to explore the branches to better understand how the project evolves and the different concepts covered.
+![Component A Props](./courseScreenshots/propsA.png)
+
+## 🔍 What it does:
+Manages the main counter state and its update functions.
+
+Passes the data and logic as props to B.
+
+![Comp B](./courseScreenshots/propsB.png)
+
+## 🔍 What it does:
+Receives props from A using destructuring.
+
+Forwards those props to C.
+
+![Comp C](./courseScreenshots/propsC.png)
+
+## 🔍 What it does:
+Displays the current counter value.
+
+Renders action buttons dynamically using an array called ACTIONS.
+
+Each button executes its corresponding function (increment, decrement, reset) when clicked.
+
+# 🧠 Why This Is Cool
+✅ Dynamic Rendering: Buttons are not hard-coded; they are generated from a data array.
+
+🧼 Cleaner Code: Using map() reduces repetitive JSX and makes future changes easier.
+
+🔁 Prop Drilling: Props flow from A → B → C to control behavior across components.
+

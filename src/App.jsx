@@ -1,12 +1,12 @@
-import Counter from "./Counter"
+import A from "./components/A"
 
 const App = () => {
   return (
-    <div>
-        {/* Delaring The Components */}
-        <Counter />
+    <div className=" ">
+      <A />
     </div>
   )
 }
 
 export default App
+
