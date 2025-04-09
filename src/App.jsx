@@ -1,10 +1,8 @@
-import Counter from "./Counter"
 
 const App = () => {
   return (
     <div>
-        {/* Delaring The Components */}
-        <Counter />
+      Hello World
     </div>
   )
 }
