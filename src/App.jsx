@@ -1,10 +1,10 @@
-import Counter from "./Counter"
+// App is the root component
+import Timer from "./components/Timer"
 
 const App = () => {
   return (
     <div>
-        {/* Delaring The Components */}
-        <Counter />
+      <Timer /> {/* Renders the Timer component */}
     </div>
   )
 }
