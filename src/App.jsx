@@ -1,14 +1,17 @@
-import UserContextProvider from './context/UserContext';
-import A from './components/A';
-import B from './components/B';
+import { Route, Routes } from "react-router-dom"
+import Home from "./components/Home"
+import Contact from "./components/Contact"
+
 
 const App = () => {
 
   return (
-    <UserContextProvider>
-     <A title='Hello World'/>
-     <B />
-    </UserContextProvider>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   )
 }
 
