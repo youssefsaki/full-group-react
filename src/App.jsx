@@ -1,11 +1,14 @@
-import Counter from "./Counter"
+import UserContextProvider from './context/UserContext';
+import A from './components/A';
+import B from './components/B';
 
 const App = () => {
+
   return (
-    <div>
-        {/* Delaring The Components */}
-        <Counter />
-    </div>
+    <UserContextProvider>
+     <A title='Hello World'/>
+     <B />
+    </UserContextProvider>
   )
 }
 
