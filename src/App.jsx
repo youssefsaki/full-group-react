@@ -7,7 +7,9 @@ import Learn from './components/Learn'
 import OrderDetails from "./components/OrderDetails";
 import { Form } from "./components/Form";
 import NotFound from './components/NotFound'
-
+import Blogs from './components/Blogs'
+import Recipes from './components/Recipes'
+import Coding from './components/Coding'
 
 const App = () => {
 
@@ -25,7 +27,11 @@ const App = () => {
 
         <Route path="/order-success" element={<OrderDetails />} />
 
-        <Route path="/blogs" element={<Blogs />}></Route>
+        <Route path="blogs" element={<Blogs />}>
+          <Route index element={<Recipes />} />
+          <Route path="recipes" element={<Recipes />} />
+          <Route path="coding" element={<Coding />} />
+        </Route>
 
         <Route path="*" element={<NotFound />} />
       </Routes>
