@@ -34,6 +34,9 @@ const NavBar = () => {
           <li>
             <NavLink style={isActiveStyleHandler} to='blog'>Blog</NavLink>
           </li>
+          <li>
+            <NavLink style={isActiveStyleHandler} to='blogs'>Blogs</NavLink>
+          </li>
         </ul>
     </div>
   )

@@ -4,6 +4,9 @@ import Contact from "./components/Contact"
 import Community from './components/Community';
 import Blog from "./components/Blog";
 import Learn from './components/Learn'
+import OrderDetails from "./components/OrderDetails";
+import { Form } from "./components/Form";
+import NotFound from './components/NotFound'
 
 
 const App = () => {
@@ -18,6 +21,13 @@ const App = () => {
         <Route path="/community" element={<Community />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/learn" element={<Learn />} />
+        <Route path="/login" element={<Form />} />
+
+        <Route path="/order-success" element={<OrderDetails />} />
+
+        <Route path="/blogs" element={<Blogs />}></Route>
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   )
