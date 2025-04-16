@@ -6,7 +6,9 @@ import { BrowserRouter } from 'react-router-dom'
 import NavBar from './components/NavBar.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter future={{
+    v7_startTransition: true,
+  }}>
     <NavBar />
     <App />
   </BrowserRouter>,

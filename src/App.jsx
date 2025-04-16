@@ -10,6 +10,10 @@ import NotFound from './components/NotFound'
 import Blogs from './components/Blogs'
 import Recipes from './components/Recipes'
 import Coding from './components/Coding'
+import Products from "./components/Products";
+import ProductDetails from './components/ProductDetails';
+import Posts from "./components/Posts";
+import PostsDetails from "./components/PostsDetails";
 
 const App = () => {
 
@@ -32,6 +36,13 @@ const App = () => {
           <Route path="recipes" element={<Recipes />} />
           <Route path="coding" element={<Coding />} />
         </Route>
+
+        <Route path="products" element={<Products />}>
+          <Route path=":id" element={<ProductDetails />} />
+        </Route>
+
+        <Route path="posts" element={<Posts />} />
+        <Route path="/posts/:id" element={<PostsDetails />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
